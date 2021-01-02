@@ -14,7 +14,7 @@ namespace AI
                 yield return new WaitForEndOfFrame();
             }
 
-            StateMachine.SetState(new PassiveOffense(StateMachine));
+            StateMachine.SetState(new OffenseWithoutBall(StateMachine));
         }
     }
 }

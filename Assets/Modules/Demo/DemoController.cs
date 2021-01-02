@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using AI;
 
@@ -25,15 +23,14 @@ public class DemoController : StateMachine
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(State.BallRecieve());
+            StartCoroutine(State.BallReceive());
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             StartCoroutine(State.Kick());
         }
-
-        if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             StartCoroutine(State.Pass());
         }

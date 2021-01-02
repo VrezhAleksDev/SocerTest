@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace AI
 {
-    public class ActiveOffense : State
+    public class OffenseWithBall : State
     {
-        public ActiveOffense(StateMachine stateMachine) : base(stateMachine) { }
+        public OffenseWithBall(StateMachine stateMachine) : base(stateMachine) { }
 
         public override IEnumerator Start()
         {
@@ -18,9 +18,11 @@ namespace AI
         {
             while (true)
             {
-                StateMachine.SetAnimationValue("IsMoving", true);
-                StateMachine.SetAnimationValue("VelocityZ", StateMachine.Velocity.z);
-                StateMachine.SetAnimationValue("VelocityX", StateMachine.Velocity.x);
+                StateMachine.SetAnimationValue("IsMoving", StateMachine.CurrentTrajectory != null && StateMachine.CurrentTrajectory.CurrentPoint);
+                StateMachine.SetAnimationValue("VelocityZ", StateMachine.AnimationVelocity.z);
+                StateMachine.SetAnimationValue("VelocityX", StateMachine.AnimationVelocity.x);
+
+                StateMachine.MoveByTraectory(StateMachine.CurrentTrajectory);
 
                 yield return new WaitForEndOfFrame();
             }
@@ -32,7 +34,7 @@ namespace AI
 
             yield return new WaitForSeconds(0.2f);
 
-            StateMachine.SetState(new PassiveOffense(StateMachine));
+            StateMachine.SetState(new OffenseWithoutBall(StateMachine));
         }
 
         public override IEnumerator Pass()
@@ -41,7 +43,7 @@ namespace AI
 
             yield return new WaitForSeconds(0.2f);
 
-            StateMachine.SetState(new PassiveOffense(StateMachine));
+            StateMachine.SetState(new OffenseWithoutBall(StateMachine));
         }
     }
 }

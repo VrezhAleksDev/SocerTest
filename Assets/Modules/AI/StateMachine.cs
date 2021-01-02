@@ -1,3 +1,4 @@
+using AI.Trajectory;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,16 +10,25 @@ namespace AI
         protected State State;
 
         public virtual bool IsGrounded { get; set; }
+        public int Team { get; set; }
+        public LineTrajectory CurrentTrajectory { get; set; }
 
         [HideInInspector]
         public Vector3 Velocity;
 
+        public virtual Vector3 AnimationVelocity => Velocity;
+
 
         public void SetState(State state)
         {
+            StopAllCoroutines();
             State = state;  
             StartCoroutine(State.Start());
         }
+
+        public virtual void MoveWithTeamDirection() { }
+
+        public virtual void MoveByTraectory(LineTrajectory trajectory) { }
 
         public virtual void SetAnimationValue(string key, float value) { }
 
