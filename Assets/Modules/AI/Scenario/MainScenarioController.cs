@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AI.Scenario.Models;
+using AI.Models;
 using AI.Trajectory;
 
 namespace AI.Scenario
@@ -27,7 +27,7 @@ namespace AI.Scenario
             basicController.transform.position = spawnInfo.SpawnPoint.position;
             basicController.transform.rotation = spawnInfo.SpawnPoint.rotation;
 
-            basicController.Team = spawnInfo.Team;
+            basicController.Info = spawnInfo;
 
             if (spawnInfo.TrajectoryGroup >= 0)
             {

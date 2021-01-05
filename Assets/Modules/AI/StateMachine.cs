@@ -1,3 +1,4 @@
+using AI.Models;
 using AI.Trajectory;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,15 +10,14 @@ namespace AI
     {
         protected State State;
 
+        public SocerInfo Info { get; set; }
         public virtual bool IsGrounded { get; set; }
-        public int Team { get; set; }
         public LineTrajectory CurrentTrajectory { get; set; }
 
         [HideInInspector]
         public Vector3 Velocity;
 
         public virtual Vector3 AnimationVelocity => Velocity;
-
 
         public void SetState(State state)
         {

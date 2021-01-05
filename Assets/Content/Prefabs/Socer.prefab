@@ -596,8 +596,8 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0, z: 0}
   Animator: {fileID: 4979962071446867905}
   ForwardSpeed: 2
-  VelocityAnimationMultiplier: {x: 1, y: 0, z: 3}
-  VelocityAnimationMax: {x: 1, y: 0, z: 1}
+  VelocityAnimationLerp: 5
+  VelocityAnimationMultiplier: 1.5
 --- !u!1 &1852360588592259423
 GameObject:
   m_ObjectHideFlags: 0

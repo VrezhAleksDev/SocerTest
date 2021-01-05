@@ -155,6 +155,58 @@ Transform:
   m_Father: {fileID: 893398119}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &46965488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 46965489}
+  - component: {fileID: 46965490}
+  m_Layer: 0
+  m_Name: MiddleMidfielder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &46965489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46965488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46965490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46965488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 1
+  PlayerPosition: 1
+  Ranges:
+  - Name: BaseRange
+    Radius: 15
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 18
+    Spacing: {x: 0, y: 0, z: 1}
 --- !u!1001 &65389211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -544,6 +596,58 @@ Transform:
   m_Father: {fileID: 342107610}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268387069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268387070}
+  - component: {fileID: 268387071}
+  m_Layer: 0
+  m_Name: RightDefender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268387070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268387069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268387071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268387069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 0
+  PlayerPosition: 2
+  Ranges:
+  - Name: BaseRange
+    Radius: 7
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: -3, y: 0, z: 3}
 --- !u!1 &324038309
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +752,7 @@ Transform:
   m_Children:
   - {fileID: 893398119}
   - {fileID: 257544875}
+  - {fileID: 371765708}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -696,6 +801,46 @@ Transform:
   m_Father: {fileID: 1547157274}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &371765707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371765708}
+  m_Layer: 0
+  m_Name: Zones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371765708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371765707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1590238654}
+  - {fileID: 1582509556}
+  - {fileID: 268387070}
+  - {fileID: 1295629837}
+  - {fileID: 46965489}
+  - {fileID: 1752135827}
+  - {fileID: 1684127147}
+  - {fileID: 1276384667}
+  - {fileID: 1323390490}
+  - {fileID: 1954972659}
+  m_Father: {fileID: 342107610}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450789116
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,34 +872,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SocerPrefab: {fileID: 1781065240810606337, guid: c4d99c741e5e137418a15badc1c11ea9, type: 3}
   SpawnInfos:
-  - Name: 3 offense
+  - Name: 3 Left Midfielder
+    Team: 0
+    Role: 1
+    Position: 0
     SpawnPoint: {fileID: 1547157274}
     TrajectoryGroup: 1
-  - Name: 11 offense
+  - Name: 11 Left Forward
+    Team: 0
+    Role: 2
+    Position: 0
     SpawnPoint: {fileID: 2080062144}
     TrajectoryGroup: 2
-  - Name: 9 offense
+  - Name: 9 Middle Striker
+    Team: 0
+    Role: 3
+    Position: 1
     SpawnPoint: {fileID: 479305444}
     TrajectoryGroup: 3
-  - Name: 6 offense
+  - Name: 6 Middle Defender
+    Team: 0
+    Role: 0
+    Position: 1
     SpawnPoint: {fileID: 1144728475}
     TrajectoryGroup: 4
-  - Name: 10 offense
+  - Name: 10 Right Midfielder
+    Team: 0
+    Role: 1
+    Position: 2
     SpawnPoint: {fileID: 236962546}
     TrajectoryGroup: 5
-  - Name: 7 offense
+  - Name: 7 Right Forward
+    Team: 0
+    Role: 2
+    Position: 2
     SpawnPoint: {fileID: 1510094693}
     TrajectoryGroup: 6
-  - Name: 2 offense
+  - Name: 2 Right Defender
+    Team: 0
+    Role: 0
+    Position: 2
     SpawnPoint: {fileID: 195969}
     TrajectoryGroup: 7
-  - Name: 8 passive offense
+  - Name: 8  Middle Midfielder (passive)
+    Team: 0
+    Role: 1
+    Position: 1
     SpawnPoint: {fileID: 340739078}
     TrajectoryGroup: -1
-  - Name: 5 passive offense
+  - Name: 5 Left Defender (passive)
+    Team: 0
+    Role: 0
+    Position: 0
     SpawnPoint: {fileID: 1627456567}
     TrajectoryGroup: -1
-  - Name: 4 passive offense
+  - Name: 4 Middle Defender (passive)
+    Team: 0
+    Role: 0
+    Position: 1
     SpawnPoint: {fileID: 808653990}
     TrajectoryGroup: -1
 --- !u!4 &450789118
@@ -1545,6 +1720,162 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Group: 2
   Index: 2
+--- !u!1 &1276384666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276384667}
+  - component: {fileID: 1276384668}
+  m_Layer: 0
+  m_Name: MiddleForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276384667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276384666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 8.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276384668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276384666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 2
+  PlayerPosition: 1
+  Ranges:
+  - Name: BaseRange
+    Radius: 9
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: 0, y: 0, z: 1}
+--- !u!1 &1295629836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295629837}
+  - component: {fileID: 1295629838}
+  m_Layer: 0
+  m_Name: LeftMidfielder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1295629837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295629836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1295629838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295629836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 1
+  PlayerPosition: 0
+  Ranges:
+  - Name: BaseRange
+    Radius: 7
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: 3, y: 0, z: 3}
+--- !u!1 &1323390489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323390490}
+  - component: {fileID: 1323390491}
+  m_Layer: 0
+  m_Name: MiddleStriker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323390490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323390489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323390491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323390489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 3
+  PlayerPosition: 1
+  Ranges:
+  - Name: BaseRange
+    Radius: 9
+    Spacing: {x: 0, y: 0, z: 3}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: 0, y: 0, z: 2}
 --- !u!1 &1347156109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,6 +2167,110 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1582509555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582509556}
+  - component: {fileID: 1582509557}
+  m_Layer: 0
+  m_Name: MiddleDefender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582509556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582509555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582509557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582509555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 0
+  PlayerPosition: 1
+  Ranges:
+  - Name: BaseRange
+    Radius: 15
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 16
+    Spacing: {x: 0, y: 0, z: 3}
+--- !u!1 &1590238653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590238654}
+  - component: {fileID: 1590238655}
+  m_Layer: 0
+  m_Name: LeftDefender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1590238654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590238653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590238655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590238653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 0
+  PlayerPosition: 0
+  Ranges:
+  - Name: BaseRange
+    Radius: 7
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: 3, y: 0, z: 3}
 --- !u!1 &1627456566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +2301,58 @@ Transform:
   m_Father: {fileID: 893398119}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1684127146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684127147}
+  - component: {fileID: 1684127148}
+  m_Layer: 0
+  m_Name: LeftForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684127147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684127146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: 8.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684127148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684127146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 2
+  PlayerPosition: 0
+  Ranges:
+  - Name: BaseRange
+    Radius: 9
+    Spacing: {x: 0, y: 0, z: 3}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: 3, y: 0, z: 1}
 --- !u!1 &1714791918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +2398,110 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Group: 6
   Index: 2
+--- !u!1 &1752135826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752135827}
+  - component: {fileID: 1752135828}
+  m_Layer: 0
+  m_Name: RightMidfielder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1752135827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752135826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752135828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752135826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 1
+  PlayerPosition: 2
+  Ranges:
+  - Name: BaseRange
+    Radius: 7
+    Spacing: {x: 0, y: 0, z: 0}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: -3, y: 0, z: 3}
+--- !u!1 &1954972658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954972659}
+  - component: {fileID: 1954972660}
+  m_Layer: 0
+  m_Name: RightForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954972659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954972658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 8.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371765708}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954972660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954972658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad7a656fedbf6a4c81250d00c9be644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRole: 2
+  PlayerPosition: 2
+  Ranges:
+  - Name: BaseRange
+    Radius: 9
+    Spacing: {x: 0, y: 0, z: 3}
+  - Name: PotentionalRange
+    Radius: 13
+    Spacing: {x: -3, y: 0, z: 1}
 --- !u!1 &1981325541
 GameObject:
   m_ObjectHideFlags: 0
